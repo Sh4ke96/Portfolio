@@ -6,30 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artur Michałek</title>
     <script
-    src="https://kit.fontawesome.com/72711e5357.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/72711e5357.js"
+      crossorigin="anonymous"
     ></script>
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- HEADER -->
-      <header id="home">
+    <header id="home">
       <nav>
-        <a href="#home"><img class="nav__logo" src="images/logo.png" alt="Logo with A letter"></a>
+        <a href="#home"
+          ><img
+            class="nav__logo"
+            src="images/logo.png"
+            alt="Logo with A letter"
+        /></a>
         <button class="hamburger">
           <div class="bar"></div>
         </button>
         <ul class="nav__ul">
-          <li class="nav__li"><a href="#about-me" class="nav__link"><span class="nav__span">01.</span>About Me</a></li>
-          <li class="nav__li"><a href="#projects" class="nav__link"><span class="nav__span">02.</span>Projects</a></li>
-          <li class="nav__li"><a href="#other-projects" class="nav__link"><span class="nav__span">03.</span>Other Projects</a></li>
-          <li class="nav__li"><a href="#contact" class="nav__link"><span class="nav__span">04.</span>Contact</a></li>
+          <li class="nav__li">
+            <a href="#about-me" class="nav__link"
+              ><span class="nav__span">01.</span>About Me</a
+            >
+          </li>
+          <li class="nav__li">
+            <a href="#projects" class="nav__link"
+              ><span class="nav__span">02.</span>Projects</a
+            >
+          </li>
+          <li class="nav__li">
+            <a href="#other-projects" class="nav__link"
+              ><span class="nav__span">03.</span>Other Projects</a
+            >
+          </li>
+          <li class="nav__li">
+            <a href="#contact" class="nav__link"
+              ><span class="nav__span">04.</span>Contact</a
+            >
+          </li>
         </ul>
       </nav>
       <div class="header__info">
@@ -40,17 +61,20 @@
           >.
         </h2>
         <p class="header__description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
-          repellendus
-          <span class="global__green-element">doloremque</span> quidem sint
-          veritatis maiores dolor eligendi voluptatem nostrum
-          <span class="global__green-element">maxime</span> sit laudantium
-          eveniet, perspiciatis temporibus a cum voluptatibus quod sequi?
+          I would like to receive the opportunity to gain experience, build my
+          knowledge and further
+          <span class="global__green-element">push</span>
+          my career forward. I have been
+          <span class="global__green-element">regularly learning</span>
+          new technologies for over six months now and my goal is to find a
+          <span class="global__green-element">junior frontend developer</span>
+          job this year.
         </p>
         <a class="email__link" href="mailto:sh4ke96@gmail.com"
           ><button class="global__button">Get In Touch</button></a
         >
-      </header>
+      </div>
+    </header>
     <!-- MAIN -->
     <main>
       <i class="fas fa-arrow-up scroll__button"></i>
@@ -84,59 +108,97 @@
       <section id="projects" class="projects">
         <h2 class="global__title">Some Things I've Built</h2>
         <div class="projects__wrapper">
-        <div data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <h1 class="projects__title">KOVID-19</h1>
-          <p class="projects__description">
-            Kovid-19 website is a collection of key information on the virus. I used few libraries to ensure that layout looks nice, more interesting and works on all major browsers.
-          </p>
-          <p class="projects__tech">JavaScript</p>
-          <p class="projects__tech">SASS</p>
-          <p class="projects__tech">CountUp</p>
-          <p class="projects__tech">Hamburgers</p>
-          <div class="projects__icons">
-            <a class="projects__link" target="_blank" href="https://github.com/Sh4ke96/Kovid-19"
-              ><i class="projects__item fab fa-github"></i
-            ></a>
-            <a class="projects__link" target="_blank" href="https://sh4ke96.github.io/Kovid-19/"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <h1 class="projects__title">KOVID-19</h1>
+            <p class="projects__description">
+              Kovid-19 website is a collection of key information on the virus.
+              I used few libraries to ensure that layout looks nice, more
+              interesting and works on all major browsers.
+            </p>
+            <p class="projects__tech">JavaScript</p>
+            <p class="projects__tech">SASS</p>
+            <p class="projects__tech">CountUp</p>
+            <p class="projects__tech">Hamburgers</p>
+            <div class="projects__icons">
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://github.com/Sh4ke96/Kovid-19"
+                ><i class="projects__item fab fa-github"></i
+              ></a>
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://sh4ke96.github.io/Kovid-19/"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <h1 class="projects__title">CLOUD-24</h1>
+            <p class="projects__description">
+              Weather application using data from OpenWeatherMap. Type a city or
+              country name and check actual weather.
+            </p>
+            <p class="projects__tech">JavaScript</p>
+            <p class="projects__tech">SASS</p>
+            <p class="projects__tech">OpenWeatherMap</p>
+            <div class="projects__icons">
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://github.com/Sh4ke96/Cloud-24"
+                ><i class="projects__item fab fa-github"></i
+              ></a>
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://sh4ke96.github.io/Cloud-24/"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <h1 class="projects__title">ORGANIC</h1>
+            <p class="projects__description">
+              Organic website is a simple shop template for a fresh and healthy
+              food. I used few libraries to ensure that layout looks nice, more
+              interesting and works on all major browsers.
+            </p>
+            <p class="projects__tech">JavaScript</p>
+            <p class="projects__tech">SASS</p>
+            <p class="projects__tech">AOS</p>
+            <div class="projects__icons">
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://github.com/Sh4ke96/Organic"
+                ><i class="projects__item fab fa-github"></i
+              ></a>
+              <a
+                class="projects__link"
+                target="_blank"
+                href="https://sh4ke96.github.io/Organic/"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <h1 class="projects__title">CLOUD-24</h1>
-          <p class="projects__description">
-            Weather application using data from OpenWeatherMap. Type a city or country name and check actual weather.
-          </p>
-          <p class="projects__tech">JavaScript</p>
-          <p class="projects__tech">SASS</p>
-          <p class="projects__tech">OpenWeatherMap</p>
-          <div class="projects__icons">
-            <a class="projects__link" target="_blank" href="https://github.com/Sh4ke96/Cloud-24"
-              ><i class="projects__item fab fa-github"></i
-            ></a>
-            <a class="projects__link" target="_blank" href="https://sh4ke96.github.io/Cloud-24/"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
-          </div>
-        </div>
-        <div data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <h1 class="projects__title">ORGANIC</h1>
-          <p class="projects__description">
-            Organic website is a simple shop template for a fresh and healthy food. I used few libraries to ensure that layout looks nice, more interesting and works on all major browsers.
-          </p>
-          <p class="projects__tech">JavaScript</p>
-          <p class="projects__tech">SASS</p>
-          <p class="projects__tech">AOS</p>
-          <div class="projects__icons">
-            <a class="projects__link" target="_blank" href="https://github.com/Sh4ke96/Organic"
-              ><i class="projects__item fab fa-github"></i
-            ></a>
-            <a class="projects__link" target="_blank" href="https://sh4ke96.github.io/Organic/"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
-          </div>
-        </div>
-      </div>
       </section>
       <section id="other-projects" class="other__projects">
         <h2 class="global__title">Other Projects</h2>
@@ -144,115 +206,145 @@
           <a class="other__archive_link" href="#">View the Archive</a>
         </h3>
         <div class="other__projects__wrapper">
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
-        </div>
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
-        </div>
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
-        </div>
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
-        </div>
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
-        </div>
-        <div data-aos="zoom-out" data-aos-easing="linear" data-aos-once="true" class="projects__container">
-          <div class="other__icons">
-            <a class="projects__link" href="#"
-              ><i class="other__item far fa-folder"></i
-            ></a>
-            <a class="projects__link" href="#"
-              ><i class="projects__item fas fa-external-link-alt"></i
-            ></a>
+          <div
+            data-aos="zoom-out"
+            data-aos-easing="linear"
+            data-aos-once="true"
+            class="projects__container"
+          >
+            <div class="other__icons">
+              <a class="projects__link" href="#"
+                ><i class="other__item far fa-folder"></i
+              ></a>
+              <a class="projects__link" href="#"
+                ><i class="projects__item fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <h1 class="projects__title">Lorem Ipsum</h1>
+            <p class="projects__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              incidunt vitae ea aspernatur iusto nulla nisi accusamus
+              necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
+              quis? Odit voluptatum similique ea.
+            </p>
+            <p class="projects__tech">Lorem ipsum dolor sit</p>
           </div>
-          <h1 class="projects__title">Lorem Ipsum</h1>
-          <p class="projects__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-            incidunt vitae ea aspernatur iusto nulla nisi accusamus
-            necessitatibus omnis alias, nemo voluptates quae sunt blanditiis
-            quis? Odit voluptatum similique ea.
-          </p>
-          <p class="projects__tech">Lorem ipsum dolor sit</p>
         </div>
-      </div>
       </section>
       <section id="contact" class="contact">
         <h2 class="global__title">What's Next?</h2>
@@ -271,15 +363,25 @@
     <!-- FOOTER -->
     <footer>
       <div class="footer__icons">
-        <a class="footer__link"href="#"><i class="footer__item fab fa-github"></i></a>
-        <a class="footer__link"href="#"><i class="footer__item fab fa-instagram"></i></a>
-        <a class="footer__link"href="#"><i class="footer__item fab fa-twitter"></i></a>
-        <a class="footer__link"href="#"><i class="footer__item fab fa-linkedin-in"></i></a>
-        <a class="footer__link"href="#"><i class="footer__item fab fa-codepen"></i></a>
+        <a class="footer__link" href="#"
+          ><i class="footer__item fab fa-github"></i
+        ></a>
+        <a class="footer__link" href="#"
+          ><i class="footer__item fab fa-instagram"></i
+        ></a>
+        <a class="footer__link" href="#"
+          ><i class="footer__item fab fa-twitter"></i
+        ></a>
+        <a class="footer__link" href="#"
+          ><i class="footer__item fab fa-linkedin-in"></i
+        ></a>
+        <a class="footer__link" href="#"
+          ><i class="footer__item fab fa-codepen"></i
+        ></a>
       </div>
       <p class="footer__info">Designed & Built by Artur Michałek</p>
-      </footer>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="styles/styles.js"></script>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="styles/styles.js"></script>
   </body>
 </html>
