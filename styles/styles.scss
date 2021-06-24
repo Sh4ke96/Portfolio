@@ -1,0 +1,533 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+// ~ VARIABLES ~
+
+$main-font: "Roboto", sans-serif;
+$accent-font: "Roboto Mono", monospace;
+$main-color: #71d99e;
+$accent-color: #e6f1ff;
+$accent-color-dark: #ccd6f6;
+
+// ~ MIXINS ~
+
+@mixin tablet {
+  @media (min-width: 760px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin big-desktop {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// ~ GLOBAL ELEMENTS ~
+
+.global__button {
+  margin-top: 2rem;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: $main-color;
+  background-color: #212226;
+  padding: 1rem;
+  cursor: pointer;
+  @include tablet {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.global__button:hover {
+  background-color: $accent-color-dark;
+  color: #212226;
+  border: 1px solid #212226;
+}
+
+.global__title {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  color: $accent-color;
+  font-size: 1.5rem;
+  font-weight: normal;
+  white-space: nowrap;
+  @include tablet {
+    font-size: 1.8rem;
+  }
+}
+
+.global__title::before {
+  position: relative;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: $main-color;
+  font-family: $accent-font;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.global__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin-left: 10px;
+  background-color: $accent-color-dark;
+}
+
+.global__green-element {
+  color: $main-color;
+  font-size: 1.2rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.blocked {
+  overflow: hidden;
+}
+
+body {
+  background-color: #212226;
+  margin: 1.5rem 3rem;
+  font-family: $main-font;
+  counter-reset: section;
+  overflow-x: hidden;
+  @include desktop {
+    margin: 3rem 5rem;
+  }
+}
+
+// ~ HEADER ~
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav__logo {
+    width: 50px;
+    height: 50px;
+    @include tablet {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 2;
+  @include tablet {
+    width: 40px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: $main-color;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+nav {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav__ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  min-height: 100vh;
+  background: #1e4040;
+  z-index: 1;
+  transition: 0.3s;
+  @include desktop {
+    flex-flow: row nowrap;
+    background: none;
+    position: static;
+    min-height: 0;
+    justify-content: normal;
+    align-items: normal;
+    width: auto;
+    transition: none;
+  }
+  &.is-active {
+    right: 0;
+  }
+  .nav__li {
+    list-style: none;
+    padding: 2.5rem;
+    @include desktop {
+      padding: 0;
+      margin: 0 1.2rem;
+    }
+    .nav__link {
+      text-decoration: none;
+      color: $accent-color;
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+      .nav__span {
+        color: $main-color;
+        font-family: $accent-font;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid $main-color;
+}
+
+.header__info {
+  margin-top: 4rem;
+
+  .header__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+
+  .header__subtitle {
+    margin-top: 1rem;
+    color: $accent-color;
+    font-size: 1.8rem;
+    @include tablet {
+      font-size: 2.5rem;
+    }
+
+    .header__subtitle_dark {
+      margin-top: 0.5rem;
+      color: $accent-color-dark;
+      font-size: 1.6rem;
+      @include tablet {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .header__description {
+    margin-top: 1rem;
+    color: $accent-color-dark;
+    font-size: 1.2rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    .header__description_green {
+      color: $main-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// ~ MAIN ~
+
+.scroll__button {
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  color: $main-color;
+  font-size: 1rem;
+  border: 2px solid $main-color;
+  background-color: #212226;
+  border-radius: 50px;
+  padding: 0.5rem;
+  cursor: pointer;
+  @include tablet {
+    right: 10px;
+  }
+  @include desktop {
+    right: 20px;
+  }
+}
+
+.scroll__button:hover {
+  background-color: $accent-color-dark;
+  color: #212226;
+  border: 2px solid #212226;
+}
+
+.about-me {
+  margin: 8rem 0 -3rem 0;
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.about-me__container {
+  margin-top: 2.5rem;
+}
+
+.about-me__description {
+  color: $accent-color-dark;
+  font-size: 1.1rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.about-me__skills-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  list-style: outside none none;
+  .about-me__skills__item {
+    color: $accent-color-dark;
+    font-size: 1.1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.about-me__skills__item::before {
+  align-items: center;
+  color: $main-color;
+  content: "▹";
+  margin-right: 0.2rem;
+}
+
+.projects__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.projects {
+  margin-bottom: -3rem;
+}
+
+.projects__container {
+  margin-top: 2.5rem;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  padding: 1.5rem 1rem;
+  @include tablet {
+    padding: 2.5rem 2rem;
+  }
+  @include desktop {
+    padding: 3.5rem 2rem;
+    text-align: center;
+    margin: 3rem 1rem;
+    width: 450px;
+  }
+  .projects__title {
+    color: $accent-color;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  .projects__description {
+    color: $accent-color-dark;
+    margin-bottom: 0.5rem;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+  .projects__tech {
+    color: $main-color;
+    margin-bottom: 0.5rem;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+  .projects__link {
+    display: inline-block;
+    margin: 0.5rem 1.5rem 0 0;
+  }
+  .projects__item {
+    color: $accent-color;
+    font-size: 1.2rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// .projects__container:hover {
+//   cursor: pointer;
+// }
+
+.projects__item:hover {
+  color: $main-color;
+}
+
+.other__projects__wrapper {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.other__projects {
+  margin-bottom: -3rem;
+}
+
+.other__archive {
+  margin-top: 2.5rem;
+  text-align: center;
+  .other__archive_link {
+    color: $main-color;
+    text-decoration: none;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.other__archive_link:hover {
+  border-bottom: 1px solid $main-color;
+}
+
+.other__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  @include desktop {
+    flex-flow: column;
+  }
+  .other__item {
+    color: $main-color;
+    font-size: 3rem;
+    @include tablet {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.other__item:hover {
+  color: $accent-color-dark;
+}
+
+.contact__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  @include tablet {
+    margin-top: 5rem;
+  }
+  @include desktop {
+    margin-top: 3rem;
+  }
+  .contact__title {
+    color: $accent-color;
+    font-size: 1.5rem;
+  }
+  .contact__description {
+    color: $accent-color-dark;
+    text-align: center;
+    margin-top: 0.5rem;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// ~ FOOTER ~
+
+footer {
+  @include tablet {
+    margin-top: 5rem;
+  }
+  @include desktop {
+    margin-top: 3rem;
+  }
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  @include desktop {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .footer__item {
+    color: $accent-color;
+    font-size: 1.5rem;
+    @include desktop {
+      padding: 1rem;
+    }
+  }
+}
+
+.footer__item:hover {
+  color: $main-color;
+}
+
+.footer__info {
+  text-align: center;
+  margin-top: 1rem;
+  color: $accent-color-dark;
+  @include tablet {
+    font-size: 1.2rem;
+  }
+}
