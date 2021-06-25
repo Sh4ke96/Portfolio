@@ -618,6 +618,10 @@ nav .nav__logo {
   color: #71d99e;
 }
 
+.other__projects__wrapper .archive__container {
+  width: auto;
+}
+
 @media (min-width: 1200px) {
   .other__projects__wrapper {
     display: -ms-grid;
