@@ -23,6 +23,7 @@
       <nav>
         <a href="#home"
           ><img
+            data-aos="fade-down"
             class="nav__logo"
             src="images/logo.png"
             alt="Logo with A letter"
@@ -31,22 +32,22 @@
           <div class="bar"></div>
         </button>
         <ul class="nav__ul">
-          <li class="nav__li">
+          <li data-aos="fade-down" class="nav__li">
             <a href="#about-me" class="nav__link"
               ><span class="nav__span">01.</span>About Me</a
             >
           </li>
-          <li class="nav__li">
+          <li data-aos="fade-down" data-aos-delay="150" class="nav__li">
             <a href="#projects" class="nav__link"
               ><span class="nav__span">02.</span>Projects</a
             >
           </li>
-          <li class="nav__li">
+          <li data-aos="fade-down" data-aos-delay="300" class="nav__li">
             <a href="#other-projects" class="nav__link"
               ><span class="nav__span">03.</span>Other Projects</a
             >
           </li>
-          <li class="nav__li">
+          <li data-aos="fade-down" data-aos-delay="450" class="nav__li">
             <a href="#contact" class="nav__link"
               ><span class="nav__span">04.</span>Contact</a
             >
@@ -54,13 +55,17 @@
         </ul>
       </nav>
       <div class="header__info">
-        <h1 class="header__title">Hi, my name is</h1>
-        <h2 class="header__subtitle">
+        <h1 class="header__title" data-aos="fade-right">Hi, my name is</h1>
+        <h2 class="header__subtitle" data-aos="fade-right" data-aos-delay="150">
           Artur Michałek. <br /><span class="header__subtitle_dark"
             >I build things for the web</span
           >.
         </h2>
-        <p class="header__description">
+        <p
+          class="header__description"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           I would like to receive the opportunity to gain experience, build my
           knowledge and further
           <span class="global__green-element">push</span>
@@ -71,7 +76,13 @@
           job this year.
         </p>
         <a class="email__link" href="mailto:sh4ke96@gmail.com"
-          ><button class="global__button">Get In Touch</button></a
+          ><button
+            class="global__button"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
+            Get In Touch
+          </button></a
         >
       </div>
     </header>
@@ -79,8 +90,14 @@
     <main>
       <i class="fas fa-arrow-up scroll__button"></i>
       <section id="about-me" class="about-me">
-        <h2 class="global__title">About Me</h2>
-        <div class="about-me__container">
+        <h2 class="global__title" data-aos="fade-right" data-aos-delay="150">
+          About Me
+        </h2>
+        <div
+          class="about-me__container"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
           <p class="about-me__description">
             Hello! My name is
             <span class="global__green-element">Artur</span> and i enjoy
@@ -94,7 +111,11 @@
             Here are a few technologies I've been working with recently:
           </p>
         </div>
-        <ul class="about-me__skills-list">
+        <ul
+          class="about-me__skills-list"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
           <li class="about-me__skills__item">HTML</li>
           <li class="about-me__skills__item">CSS</li>
           <li class="about-me__skills__item">SASS</li>
@@ -106,7 +127,9 @@
         </ul>
       </section>
       <section id="projects" class="projects">
-        <h2 class="global__title">Some Things I've Built</h2>
+        <h2 class="global__title" data-aos="fade-right" data-aos-delay="150">
+          Some Things I've Built
+        </h2>
         <div class="projects__wrapper">
           <div
             data-aos="zoom-in"
@@ -201,9 +224,17 @@
         </div>
       </section>
       <section id="other-projects" class="other__projects">
-        <h2 class="global__title">Other Projects</h2>
+        <h2 class="global__title" data-aos="fade-right" data-aos-delay="150">
+          Other Projects
+        </h2>
         <h3 class="other__archive">
-          <a class="other__archive_link" href="#">View the Archive</a>
+          <a
+            class="other__archive_link"
+            href="#"
+            data-aos="fade-down"
+            data-aos-delay="250"
+            >View the Archive</a
+          >
         </h3>
         <div class="other__projects__wrapper">
           <div
@@ -347,8 +378,14 @@
         </div>
       </section>
       <section id="contact" class="contact">
-        <h2 class="global__title">What's Next?</h2>
-        <div class="contact__container">
+        <h2 class="global__title" data-aos="fade-right" data-aos-delay="150">
+          What's Next?
+        </h2>
+        <div
+          class="contact__container"
+          data-aos="fade-down"
+          data-aos-delay="350"
+        >
           <h3 class="contact__title">Get In Touch</h3>
           <p class="contact__description">
             If u have a question or just want to say hi, I'll try my best to get
