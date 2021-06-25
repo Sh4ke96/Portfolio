@@ -104,6 +104,12 @@ body {
   }
 }
 
+.vertical__hr {
+  width: 1px;
+  height: 100px;
+  color: #e6f1ff;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +277,90 @@ nav .nav__logo {
   border-bottom: 1px solid #71d99e;
 }
 
+.ul__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 3rem;
+  list-style: none;
+  visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+  .ul__socials {
+    visibility: visible;
+  }
+}
+
+.ul__socials .socials__link {
+  text-decoration: none;
+}
+
+.ul__socials .socials__link .socials__item {
+  color: #e6f1ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.ul__socials .socials__link .socials__item:hover {
+  color: #71d99e;
+}
+
+.mail__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  text-orientation: mixed;
+  visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+  .mail__socials {
+    visibility: visible;
+  }
+}
+
+.mail__socials .mail__socials-text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-bottom: 1rem;
+  color: #e6f1ff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.mail__socials .mail__socials-text:hover {
+  color: #71d99e;
+  cursor: pointer;
+}
+
 .header__info {
   margin-top: 4rem;
 }
@@ -358,7 +448,7 @@ nav .nav__logo {
 
 @media (min-width: 1200px) {
   .scroll__button {
-    right: 20px;
+    right: 10px;
   }
 }
 

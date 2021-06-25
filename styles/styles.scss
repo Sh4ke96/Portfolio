@@ -113,6 +113,12 @@ body {
   }
 }
 
+.vertical__hr {
+  width: 1px;
+  height: 100px;
+  color: $accent-color;
+}
+
 // ~ HEADER ~
 
 nav {
@@ -229,6 +235,58 @@ nav {
   border-bottom: 1px solid $main-color;
 }
 
+.ul__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 3rem;
+  list-style: none;
+  visibility: hidden;
+  @include desktop {
+    visibility: visible;
+  }
+  .socials__link {
+    text-decoration: none;
+    .socials__item {
+      color: $accent-color;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+      margin: 1rem;
+    }
+    .socials__item:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.mail__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  text-orientation: mixed;
+  visibility: hidden;
+  @include desktop {
+    visibility: visible;
+  }
+  .mail__socials-text {
+    writing-mode: vertical-lr;
+    margin-bottom: 1rem;
+    color: $accent-color;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+  .mail__socials-text:hover {
+    color: $main-color;
+    cursor: pointer;
+  }
+}
+
 .header__info {
   margin-top: 4rem;
   @include desktop {
@@ -297,7 +355,7 @@ nav {
     right: 10px;
   }
   @include desktop {
-    right: 20px;
+    right: 10px;
   }
 }
 
