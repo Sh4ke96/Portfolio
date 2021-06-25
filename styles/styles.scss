@@ -53,6 +53,7 @@ $accent-color-dark: #ccd6f6;
   background-color: $accent-color-dark;
   color: #212226;
   border: 1px solid #212226;
+  transition: all 0.7s;
 }
 
 .global__title {
@@ -102,13 +103,13 @@ $accent-color-dark: #ccd6f6;
 }
 
 body {
-  background-color: #212226;
   margin: 1.5rem 3rem;
   font-family: $main-font;
   counter-reset: section;
   overflow-x: hidden;
+  background-color: #212226;
   @include desktop {
-    margin: 3rem 5rem;
+    margin: 3rem 10rem;
   }
 }
 
@@ -230,6 +231,9 @@ nav {
 
 .header__info {
   margin-top: 4rem;
+  @include desktop {
+    margin-top: 10rem;
+  }
 
   .header__title {
     color: $main-color;
@@ -307,6 +311,9 @@ nav {
   margin: 8rem 0 -3rem 0;
   @include tablet {
     margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 16rem;
   }
 }
 

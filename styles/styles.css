@@ -30,6 +30,8 @@
   background-color: #ccd6f6;
   color: #212226;
   border: 1px solid #212226;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .global__title {
@@ -89,16 +91,16 @@
 }
 
 body {
-  background-color: #212226;
   margin: 1.5rem 3rem;
   font-family: "Roboto", sans-serif;
   counter-reset: section;
   overflow-x: hidden;
+  background-color: #212226;
 }
 
 @media (min-width: 1200px) {
   body {
-    margin: 3rem 5rem;
+    margin: 3rem 10rem;
   }
 }
 
@@ -273,6 +275,12 @@ nav .nav__logo {
   margin-top: 4rem;
 }
 
+@media (min-width: 1200px) {
+  .header__info {
+    margin-top: 10rem;
+  }
+}
+
 .header__info .header__title {
   color: #71d99e;
   font-size: 1.5rem;
@@ -367,6 +375,12 @@ nav .nav__logo {
 @media (min-width: 760px) {
   .about-me {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-me {
+    margin-top: 16rem;
   }
 }
 
