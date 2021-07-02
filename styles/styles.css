@@ -100,7 +100,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    margin: 3rem 10rem;
+    margin: 3rem 18rem;
   }
 }
 
@@ -448,7 +448,7 @@ nav .nav__logo {
 
 @media (min-width: 1200px) {
   .scroll__button {
-    right: 10px;
+    right: 15px;
   }
 }
 
@@ -793,5 +793,99 @@ nav .nav__logo {
   .footer__info {
     font-size: 1.2rem;
   }
+}
+
+.main__archive .main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.main__archive .main__header .main__header-title {
+  font-size: 3rem;
+  color: #ccd6f6;
+  letter-spacing: 0.1rem;
+}
+
+.main__archive .main__header .main__header-text {
+  color: #71d99e;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.main__archive .main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0rem 10rem 0;
+}
+
+.main__archive .main__container .main__table-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.main__archive .main__container .main__table-titles .main__table-title {
+  font-size: 1.6rem;
+  color: #e6f1ff;
+  width: 25%;
+}
+
+.main__archive .main__container .main__table-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main__archive .main__container .main__table-content .main__table-year {
+  color: #71d99e;
+  font-size: 1.2rem;
+  width: 25%;
+}
+
+.main__archive .main__container .main__table-content .main__table-name {
+  color: #e6f1ff;
+  font-size: 1.2rem;
+  width: 25%;
+}
+
+.main__archive .main__container .main__table-content .main__table-tech {
+  color: #ccd6f6;
+  font-size: 1.2rem;
+  width: 25%;
+}
+
+.main__archive .main__container .main__table-content .main__table-icon {
+  color: #ccd6f6;
+  width: 25%;
+}
+
+.main__archive .main__container .main__table-content .main__table-icon .main__table-item {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+.main__archive .main__container .main__table-content .main__table-icon .main__table-item:hover {
+  color: #71d99e;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
