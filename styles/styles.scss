@@ -612,12 +612,18 @@ footer {
       font-size: 2.5rem;
       color: $accent-color-dark;
       letter-spacing: 0.1rem;
+      @include tablet {
+        font-size: 3.5rem;
+      }
     }
     .main__header-text {
       color: $main-color;
       font-size: 1.2rem;
       margin-top: 1rem;
       text-align: center;
+      @include tablet {
+        font-size: 2rem;
+      }
     }
   }
   .main__container {
@@ -625,6 +631,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin: 3rem 0rem;
+    @include tablet {
+      margin: 6rem 0;
+    }
     .main__table-titles {
       display: flex;
       text-align: center;
@@ -632,6 +641,9 @@ footer {
         font-size: 1rem;
         color: $accent-color;
         width: 33%;
+        @include tablet {
+          font-size: 2rem;
+        }
       }
     }
     .main__table-content {
@@ -642,11 +654,17 @@ footer {
         color: $main-color;
         font-size: 0.9rem;
         width: 33%;
+        @include tablet {
+          font-size: 1.3rem;
+        }
       }
       .main__table-tech {
         color: $accent-color-dark;
         font-size: 0.9rem;
         width: 33%;
+        @include tablet {
+          font-size: 1.3rem;
+        }
       }
       .main__table-icon {
         width: 33%;
@@ -655,6 +673,9 @@ footer {
           .main__table-item {
             font-size: 0.9rem;
             padding: 0.2rem;
+            @include tablet {
+              font-size: 1.3rem;
+            }
           }
         }
         .main__table-item:hover {
