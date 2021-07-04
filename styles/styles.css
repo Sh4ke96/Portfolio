@@ -539,6 +539,16 @@ nav .nav__logo {
   border: 1px solid #71d99e;
   border-radius: 4px;
   padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 760px) {
@@ -588,6 +598,7 @@ nav .nav__logo {
 @media (min-width: 760px) {
   .projects__container .projects__tech {
     font-size: 1.2rem;
+    margin-top: 1rem;
   }
 }
 

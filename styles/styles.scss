@@ -425,6 +425,9 @@ nav {
   border: 1px solid $main-color;
   border-radius: 4px;
   padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include tablet {
     padding: 2.5rem 2rem;
   }
@@ -455,6 +458,7 @@ nav {
     margin-bottom: 0.5rem;
     @include tablet {
       font-size: 1.2rem;
+      margin-top: 1rem;
     }
   }
   .projects__link {
