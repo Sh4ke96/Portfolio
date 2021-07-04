@@ -609,55 +609,53 @@ footer {
     align-items: center;
     margin-top: 5rem;
     .main__header-title {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $accent-color-dark;
       letter-spacing: 0.1rem;
     }
     .main__header-text {
       color: $main-color;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 1rem;
+      text-align: center;
     }
   }
   .main__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5rem 0rem 10rem 0;
+    margin: 3rem 0rem;
     .main__table-titles {
       display: flex;
       text-align: center;
       .main__table-title {
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: $accent-color;
-        width: 25%;
+        width: 33%;
       }
     }
     .main__table-content {
       display: flex;
       margin-top: 2rem;
       text-align: center;
-      .main__table-year {
-        color: $main-color;
-        font-size: 1.2rem;
-        width: 25%;
-      }
       .main__table-name {
-        color: $accent-color;
-        font-size: 1.2rem;
-        width: 25%;
+        color: $main-color;
+        font-size: 0.9rem;
+        width: 33%;
       }
       .main__table-tech {
         color: $accent-color-dark;
-        font-size: 1.2rem;
-        width: 25%;
+        font-size: 0.9rem;
+        width: 33%;
       }
       .main__table-icon {
-        color: $accent-color-dark;
-        width: 25%;
-        .main__table-item {
-          font-size: 1.2rem;
-          padding: 0.2rem;
+        width: 33%;
+        .main__table-link {
+          color: $accent-color-dark;
+          .main__table-item {
+            font-size: 0.9rem;
+            padding: 0.2rem;
+          }
         }
         .main__table-item:hover {
           color: $main-color;

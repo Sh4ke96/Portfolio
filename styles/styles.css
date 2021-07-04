@@ -810,15 +810,16 @@ nav .nav__logo {
 }
 
 .main__archive .main__header .main__header-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ccd6f6;
   letter-spacing: 0.1rem;
 }
 
 .main__archive .main__header .main__header-text {
   color: #71d99e;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .main__archive .main__container {
@@ -832,7 +833,7 @@ nav .nav__logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem 0rem 10rem 0;
+  margin: 3rem 0rem;
 }
 
 .main__archive .main__container .main__table-titles {
@@ -843,9 +844,9 @@ nav .nav__logo {
 }
 
 .main__archive .main__container .main__table-titles .main__table-title {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #e6f1ff;
-  width: 25%;
+  width: 33%;
 }
 
 .main__archive .main__container .main__table-content {
@@ -856,31 +857,28 @@ nav .nav__logo {
   text-align: center;
 }
 
-.main__archive .main__container .main__table-content .main__table-year {
-  color: #71d99e;
-  font-size: 1.2rem;
-  width: 25%;
-}
-
 .main__archive .main__container .main__table-content .main__table-name {
-  color: #e6f1ff;
-  font-size: 1.2rem;
-  width: 25%;
+  color: #71d99e;
+  font-size: 0.9rem;
+  width: 33%;
 }
 
 .main__archive .main__container .main__table-content .main__table-tech {
   color: #ccd6f6;
-  font-size: 1.2rem;
-  width: 25%;
+  font-size: 0.9rem;
+  width: 33%;
 }
 
 .main__archive .main__container .main__table-content .main__table-icon {
-  color: #ccd6f6;
-  width: 25%;
+  width: 33%;
 }
 
-.main__archive .main__container .main__table-content .main__table-icon .main__table-item {
-  font-size: 1.2rem;
+.main__archive .main__container .main__table-content .main__table-icon .main__table-link {
+  color: #ccd6f6;
+}
+
+.main__archive .main__container .main__table-content .main__table-icon .main__table-link .main__table-item {
+  font-size: 0.9rem;
   padding: 0.2rem;
 }
 
