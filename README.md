@@ -8,7 +8,7 @@ Personal portfolio site creaeted to for my all projects. I used few libraries to
 
 ## Built With
 
-* [React](https://developer.mozilla.org/pl/docs/Web/JavaScript)
+* [React](reactjs.org)
 * [SASS](https://sass-lang.com)
 * [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library.
 
